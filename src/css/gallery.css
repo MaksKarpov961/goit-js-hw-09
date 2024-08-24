@@ -1,0 +1,24 @@
+.gallery {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.simple-lightbox{
+  background-color: rgba(46, 47, 66, 0.8);
+}
+
+.sl-counter {
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0.04em !important;
+  color: var(--white) !important;
+}
+
+.sl-wrapper button{
+  color: var(--white) !important;
+}
+
+
+.sl-close:hover{opacity: 0.8!important;}

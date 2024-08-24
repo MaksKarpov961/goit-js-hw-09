@@ -41,6 +41,8 @@ body {
   padding: 8px 16px;
   background-color: var(--iris);
   transition: background-color linear 250ms;
+
+  margin-bottom: 25px;
 }
 
 .go-home:hover{
