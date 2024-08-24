@@ -10,7 +10,7 @@ const populateForm = () => {
 
   if (savedData) {
     formData = JSON.parse(savedData)// Оновлюємо об'єкт formData з локального сховища.
-    console.log(formData);
+    // console.log(formData);
     
     // Заповнюємо поля форми збереженими даними.
     // Якщо дані відсутні, залишаємо порожнім відповідне поле.
@@ -52,7 +52,7 @@ const handleFormSubmit = event => {
   localStorage.removeItem("feedback-form-state")
 
   // Скидаємо об'єкт formData до початкового стану з порожніми полями.
-  formData = { email: "", message: "" };
+  formData = { email: "", message: "" }
 
   // Очищаємо форму
   form.reset()
@@ -60,11 +60,11 @@ const handleFormSubmit = event => {
 
 // Викликаємо функцію для заповнення форми при завантаженні сторінки.
 // Якщо в localStorage є збережені дані, вони будуть використані для заповнення форми.
-populateForm();
+populateForm()
 
 
 // Додаємо подію на форму, щоб відстежувати  і оновлювати дані в localStorage.
-form.addEventListener('input', handleFormInput);
+form.addEventListener('input', handleFormInput)
 
 // Додаємо подію на форму
-form.addEventListener('submit', handleFormSubmit);
+form.addEventListener('submit', handleFormSubmit)
