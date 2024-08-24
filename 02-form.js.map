@@ -1,1 +1,1 @@
-{"version":3,"file":"02-form.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"02-form.js","sources":["../src/js/02-form.js"],"sourcesContent":["console.log('form');\n"],"names":[],"mappings":"wFAAA,QAAQ,IAAI,MAAM"}
