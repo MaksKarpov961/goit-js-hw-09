@@ -1,4 +1,4 @@
-let formData = { email: "", message: "" }
+const formData = { email: "", message: "" }
 
 const form = document.querySelector('.feedback-form')
 
@@ -9,7 +9,9 @@ const populateForm = () => {
   const savedData = localStorage.getItem("feedback-form-state")
 
   if (savedData) {
-    formData = JSON.parse(savedData)// Оновлюємо об'єкт formData з локального сховища.
+    const parsedData = JSON.parse(savedData) // Отримуємо дані з localStorage
+    formData.email = parsedData.email || ""; // Оновлюємо тільки значення полів
+    formData.message = parsedData.message || ""; 
     // console.log(formData);
     
     // Заповнюємо поля форми збереженими даними.
@@ -52,8 +54,8 @@ const handleFormSubmit = event => {
   localStorage.removeItem("feedback-form-state")
 
   // Скидаємо об'єкт formData до початкового стану з порожніми полями.
-  formData = { email: "", message: "" }
-
+  formData.email = "";
+  formData.message = "";
   // Очищаємо форму
   form.reset()
 }
