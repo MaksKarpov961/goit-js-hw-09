@@ -70,16 +70,16 @@ const images = [
   },
 ];
 
-`
-<li class="gallery-item">
-	<a class="gallery-link" href="large-image.jpg">
-		<img 
-			class="gallery-image" 
-			src="small-image.jpg" 
-			alt="Image description" 
-			/>
-	</a>
-</li>`
+// `
+// <li class="gallery-item">
+// 	<a class="gallery-link" href="large-image.jpg">
+// 		<img 
+// 			class="gallery-image" 
+// 			src="small-image.jpg" 
+// 			alt="Image description" 
+// 			/>
+// 	</a>
+// </li>`
 
 // Знаходимо елемент gallery
 const galleryEl = document.querySelector('.js-gallery')
